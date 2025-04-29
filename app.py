@@ -67,7 +67,7 @@ app.layout = html.Div([
                     ),
                     dcc.Graph(id='mu-group-size-plot', style={"height": "600px"}),
                     # Add explanatory note about the plot
-                    html.Div("Note: Each box plot represents a different cell line.", 
+                    html.Div("Note: Each box plot represents gene effect \mu_ij for a different cell line.", 
                              style={"fontStyle": "italic", "color": "#666", "marginTop": "5px", "marginBottom": "15px"}),
                     
                     html.Hr(),
@@ -93,7 +93,7 @@ app.layout = html.Div([
                     ),
                     dcc.Graph(id='phi-group-size-plot', style={"height": "600px"}),
                     # Add explanatory note about the plot points
-                    html.Div("Note: Each dot represents a different cell line.", 
+                    html.Div("Note: Each dot represents a guide effect estimate different cell line.", 
                              style={"fontStyle": "italic", "color": "#666", "marginTop": "5px", "marginBottom": "15px"}),
                     
                     html.Hr(),
